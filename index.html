@@ -1,0 +1,12 @@
+<div id="parser2">
+    <textarea id="somewhere" placeholder="Write/paste the code here then click the Parse Code button"></textarea>
+    <div class="alert alert-success margin-bottom-20 collapse" id="btnInfo" role="alert">
+        <button class="close close-copy" onclick="document.getElementById('btnInfo').style.display = 'none'; cdClear();" type="button"><span aria-hidden="true">×</span></button>
+        <h4>Code copied to clipboard</h4>
+    </div>
+    <br>
+    <button onclick="convert();" class="btn btn-primary btn-sm btn-parse" type="button">Parse Code</button>
+    <div class="clear"></div>
+    <button class="btn button-link btn-xs btn-info" id="button-link" onclick="copyToClipboard();" type="button">Copy code to clipboard</button>
+    <button class="btn btn-danger btn-xs" id="btn_clear" onclick="cdClear();">Clean</button>
+</div>
